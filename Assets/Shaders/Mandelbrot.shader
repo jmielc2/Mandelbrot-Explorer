@@ -53,7 +53,7 @@ Shader "Custom/Mandelbrot" {
                 float g = (count * 2.0) / iter;
                 g = g - floor(g) + 0.1;
                 float b = (count * 4.0) / iter;
-                b = b - floor(b + 0.5) + 0.2;
+                b = b - floor(b) + 0.2;
                 return float4(r, g, b, 1);
             }
             ENDCG
