@@ -35,7 +35,7 @@ Shader "Custom/Mandelbrot" {
             float4 fragmentProgram (Interpolators i) : SV_Target {
                 float2 val = i.uv;
                 int count = 0;
-                const int maxIterations = 200;
+                const int maxIterations = 500;
                 while (abs(length(val)) < 2 && count < maxIterations) {
                     float2 newVal = float2(
                         val.x * val.x - val.y * val.y + i.uv.x,
@@ -51,9 +51,9 @@ Shader "Custom/Mandelbrot" {
                 float iter = float(maxIterations);
                 float r = count / iter;
                 float g = (count * 2.0) / iter;
-                g = g - floor(g);
+                g = g - floor(g) + 0.1;
                 float b = (count * 4.0) / iter;
-                b = b - floor(b);
+                b = b - floor(b + 0.5) + 0.2;
                 return float4(r, g, b, 1);
             }
             ENDCG
