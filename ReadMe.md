@@ -1,11 +1,15 @@
 # Mandelbrot Explorer
 This is an interactive application that allows users to explore various parts of the famous Mandelbrot up to a certain degree of fidelity.
 
-![Mandelbrot Big Picture](https://github.com/jmielc2/Mandelbrot-Explorer/blob/master/Documents/big-picture-view.jpg?raw=true)
+![Mandelbrot Big Picture](https://github.com/jmielc2/Mandelbrot-Explorer/blob/main/Documents/big-picture-view.png?raw=true)
+
+| ![Octopus](https://github.com/jmielc2/Mandelbrot-Explorer/blob/main/Documents/octopus.png?raw=true) | ![Double spirals](https://github.com/jmielc2/Mandelbrot-Explorer/blob/main/Documents/double-spirals.png?raw=true) | ![Spilled paint](https://github.com/jmielc2/Mandelbrot-Explorer/blob/main/Documents/spilled-paint.png?raw=true) |
+| ![Lightning](https://github.com/jmielc2/Mandelbrot-Explorer/blob/main/Documents/lightning.png?raw=true) | ![Curls](https://github.com/jmielc2/Mandelbrot-Explorer/blob/main/Documents/curls.png?raw=true) | ![Crazy](https://github.com/jmielc2/Mandelbrot-Explorer/blob/main/Documents/crazy.png?raw=true) |
 
 # Controls
 - Click and drag to move around.
 - Scroll to zoom in and out.
+
 # The Math
 The Mandelbrot set is defined as the set of complex numbers for which the function
 $$f_{c}(z) = z^2 + c$$
